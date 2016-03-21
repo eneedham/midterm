@@ -4,31 +4,23 @@ body {
     font-family: helvetica, arial, sans-serif;
 }
 
-.panel, .flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #7C7871;
-    color: #FFFFFF;
-    border: none;
-    right: 10px;
-    left: 100px;
-    width: 270px;
-    display:none;
-}
-
-.flip{
-  font-weight: bold;
-}
-
-.panel {
-    padding-bottom: 50px;
+#text-block{
+  padding: 5px;
+  text-align: center;
+  background-color: #7C7871;
+  color: #FFFFFF;
+  border: none;
+  width: 270px;
+  display:none;
+  border-radius: 3px;
 }
 
 .zoom{
   position: absolute;
-  top: 800px;
+  bottom: 100px;
   left: 70px;
   font-size: 10px;
+  color: white;
 }
 
 .button{
@@ -48,27 +40,24 @@ body {
   border: none;
   border-radius: 3px;
   box-shadow: none;
+  cursor:pointer;
 }
 
 .button.prev{
   left: 20px;
-  top: 700px;
+  bottom: 200px;
   text-align: center;
 }
 
 .button.next{
   left: 200px;
-  top: 700px;
+  bottom: 200px;
 }
 
 .button:hover, .button.inverse:hover
 {
-	background:  #323A40;
+	background:  #7C7871;
 }
-
-/*.button.inverse{
-  background-color: #666666;
-}*/
 
 #map {
     position: absolute;
@@ -78,10 +67,7 @@ body {
     top: 0;
 }
 
-/*.sidebar{
-  background-color: #31313B;
-}*/
-#sidebar {
+.sidebar {
     position: absolute;
     background-color:  #00004d;
     left: 0px;
@@ -90,12 +76,18 @@ body {
     bottom: 0;
     overflow-y: auto;
     padding: 20px;
+    border-radius: 3px;
 }
 
 #text-title{
-  color: #31313B;
+  color: white;
+  margin-left: 50px;
 }
 
+#text-subtitle{
+  color: white;
+  margin-left: 10px;
+}
 
 #filter-status {
     word-wrap: break-word;
@@ -103,4 +95,5 @@ body {
 
 .flip:hover{
   background-color: #8E5F00;
+  cursor:pointer
 };

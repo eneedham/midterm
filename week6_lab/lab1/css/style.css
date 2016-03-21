@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: colfax, helvetica, arial, sans-serif;
+}
+
+p.main {
+  font-size: 24px;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 400px;
+    height: 100%;
+    top: 0;
+}
+
+/*::outline {
+   line-color: #000000;
+   line-width: 2;
+   line-join: round;
+ }*/
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.legend {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2000;
+  margin-top: 500px;
+}
+.name{
+  position: absolute;
+  padding: 5px;
+}
+
+.box.mon{
+  background-color: #BC8112;
+}
+.box.tues{
+  background-color: #BC5A12;
+}
+.box.wed{
+  background-color: #0B736B;
+}
+.box.th{
+  background-color: #9A1B00;
+}
+.box.fri{
+  background-color: #024960;
+}
+
+#button{
+  float: right;
+}
